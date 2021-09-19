@@ -3,7 +3,6 @@
 body{
     font-size: 20px;
     border: 1px solid black;
-    display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -74,7 +73,7 @@ body.portfolio{
     display: flex;
     background-color: rgba(255, 255, 255, 0.918);
     background-image: url(../assets/images/leone-venter-VieM9BdZKFo-unsplash.jpg);
-    background-size: 1500px;
+    background-size: cover;
     background-repeat:no-repeat;
     /* background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1)); */
 
@@ -95,6 +94,7 @@ section.portfolio{
    justify-content: center;
    margin-top: auto;
    overflow: auto;
+   height: 85vh;
 }
 div.portfolio-paginas{
     min-height: 500px;
@@ -102,13 +102,13 @@ div.portfolio-paginas{
     width: 940px;
     /* border: 1px solid blue; */
     display: flex;
-    padding: 20px;
+    padding: 0px;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     position: relative;
 }
-div.portfolio-lista{
+div.portfolio-item{
     height: 30%;
     width: 45%;
     /* border: black solid 1px; */
@@ -124,25 +124,25 @@ div.portfolio-lista{
     
 }
 @media (max-width: 800px){
-    div.portfolio-lista{
+    div.portfolio-item{
         width: 300px;
         height: 190px;
     }
 }
-div.portfolio-lista img{
+div.portfolio-item img{
     max-width: 100%;
     max-height: 100%;
     
 }
-div.portfolio-lista:hover img {
+div.portfolio-item:hover img {
     opacity: 0.3;
     transition: .5s ease;
   }
-div.portfolio-lista:hover{
+div.portfolio-item:hover{
     transition: .5s ease;
     margin-top: 20px;
   }
-div.portfolio-lista:hover div.texto {
+div.portfolio-item:hover div.texto {
     opacity: 1;
     transition: .5s ease;
   }
@@ -155,16 +155,32 @@ div.texto{
     opacity: 0;
     font-weight: 700;
 }
+span img{
+    width: 100px;
+}
 section.video{
-    position: static;
+    position: flex ;
     /* border: 1px solid purple; */
     text-align: left;
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
 
 }
 video{
     position: inherit;
 }
 
+/* Contacto */
+
+form{
+    margin-left: 40px;
+    margin-top: 100px;
+}
+fieldset{
+    margin-top: 100px;
+}
 
 /* W3 schools degradado template
 .container {
