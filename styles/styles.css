@@ -6,7 +6,6 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
-    flex-wrap:wrap;
 }
 
 /* Nav and header */
@@ -69,12 +68,12 @@ a.nav{
 
 
 /* Portofolio */
-body.portfolio{
+main.portfolio{
     display: flex;
     background-color: rgba(255, 255, 255, 0.918);
     background-image: url(../assets/images/leone-venter-VieM9BdZKFo-unsplash.jpg);
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat;  
     /* background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1)); */
 
     
@@ -165,6 +164,7 @@ section.video{
     color: white;
     background-color: black;
     width: 100%;
+    height: 1200px;
     text-align: center;
 
 }
@@ -173,13 +173,48 @@ video{
 }
 
 /* Contacto */
+main.contacto{
+    display: flex;
+    border: 1px solid green;
+    margin-top: 150px;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 70vh;
+    margin-left: 10px;
+}
 
 form{
-    margin-left: 40px;
-    margin-top: 100px;
+    border: 1px black solid;
+    width: 50%;
 }
 fieldset{
     margin-top: 100px;
+}
+input[type=text]{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+div.form-img {
+    border: 10px solid rgba(255, 255, 255, 0.555);
+    margin-right: 50px;
+    margin-bottom: 0px;
+    border-radius: 3px;
+
+}
+div.form-img img{
+    height: 400px;
 }
 
 /* W3 schools degradado template
