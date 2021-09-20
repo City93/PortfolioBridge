@@ -2,10 +2,17 @@
 
 body{
     font-size: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: center;
     margin: 0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body.portfolio{
+    background-color: rgba(255, 255, 255, 0.918);
+    background-image: url(../assets/images/leone-venter-VieM9BdZKFo-unsplash.jpg);
+    background-size: 2000px;
+    background-repeat:no-repeat;
 }
 
 /* Nav and header */
@@ -30,6 +37,7 @@ header{
     color: white;
     justify-content: left;
     margin-left: 0;
+    font-family: 'Mukta', sans-serif;
 
 }
 nav{
@@ -53,35 +61,33 @@ li{
     color: white;
     padding: 10px 40px;
     margin: 0;
-
+}
+li.active{
+    background-image: gray;
 }
 li:hover{
     background-color: gray;
-    transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in;
 }
+
 a.nav{
     text-decoration: none;
     color: white;
 }
 
+
 /* Home */
 
 
 /* Portofolio */
-main.portfolio{
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.918);
-    background-image: url(../assets/images/leone-venter-VieM9BdZKFo-unsplash.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;  
-    /* background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1)); */
-
-    
-}
-
 h1.titulo-proyectos{
     margin-top: 100px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+section{
+    width: 100vh;
 }
 
 
@@ -93,44 +99,52 @@ section.portfolio{
    justify-content: center;
    margin-top: auto;
    overflow: auto;
-   height: 85vh;
+   height: 73vh;
 }
 div.portfolio-paginas{
-    min-height: 500px;
+    /* min-height: 500px; */
     height: auto;
-    width: 940px;
+    width: 85%;
     /* border: 1px solid blue; */
     display: flex;
     padding: 0px;
     flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+    text-align: space-between;
+    justify-content: space-around;
     position: relative;
+    column-count: 2;
 }
 div.portfolio-item{
-    height: 30%;
-    width: 45%;
-    /* border: black solid 1px; */
-    padding: 3px;
-    margin: 32px;
-    width: 400px;
-    height: 210px;
+    width: 550px;
+    height: auto;
     align-self: flex-start;
     display: flex;
     justify-content: center;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    
 }
-@media (max-width: 800px){
+div.portfolio-arrow{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#transition-portfolio{
+    scroll-behavior: smooth;
+}
+@media (max-width: 1315px){
     div.portfolio-item{
-        width: 300px;
-        height: 190px;
+        width: 400px;
+        height: auto;
+        column-count: 1;
+        margin-top: 10px;
+        transition: 0.5s ease-in;
     }
 }
 div.portfolio-item img{
     max-width: 100%;
     max-height: 100%;
+    transition: 0.5s ease-out;
     
 }
 div.portfolio-item:hover img {
@@ -158,24 +172,34 @@ span img{
     width: 100px;
 }
 section.video{
-    position: flex ;
     /* border: 1px solid purple; */
-    text-align: left;
     color: white;
-    background-color: black;
+    background-image: url(/assets/images/pexels-adrien-olichon-2387793.jpg);
+    background-size:cover;
     width: 100%;
-    height: 1200px;
+    height: 90vh;
+    padding-top: 25px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
     text-align: center;
+    
+}
+section.video h2{
 
 }
-video{
-    position: inherit;
+section.video video{
+    align-self: center;
+    justify-self: center;
+    margin-top: 100px;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
 }
 
 /* Contacto */
+
 main.contacto{
     display: flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-top: 150px;
     align-items: center;
     /* justify-content: space-between; */
@@ -184,8 +208,15 @@ main.contacto{
 }
 
 form{
-    border: 1px black solid;
     width: 50%;
+    position: relative;
+    z-index: 999;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 fieldset{
     margin-top: 100px;
@@ -204,17 +235,50 @@ input[type=text]{
     transition: width 0.4s ease-in-out;
 }
 input[type=text]:focus {
-    width: 100%;
+    width: 75%;
 }
-div.form-img {
-    border: 10px solid rgba(255, 255, 255, 0.555);
-    margin-right: 50px;
-    margin-bottom: 0px;
-    border-radius: 3px;
+div.form-img {  
+    z-index: 0;
+    position:absolute
 
 }
 div.form-img img{
     height: 400px;
+    opacity: 50%;
+}
+textarea{
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    transition: width 0.4s ease-in-out;
+}
+textarea:focus {
+    width: 75%;
+    transition: width 0.4s ease-in-out;
+}
+input[type=submit] {
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+}
+input[type=submit]:hover{
+    background-color: rgba(83, 78, 78, 0.842);
+    padding-bottom: 5px;
+    padding-left:5px;
+    transition: 0.5s ease;
 }
 
 /* W3 schools degradado template

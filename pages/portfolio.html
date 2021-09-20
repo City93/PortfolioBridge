@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Ciudad - Portfolio</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body class="portfolio">
     <header class="navegacion">
@@ -14,7 +21,7 @@
             <ul class="nav">
                 <a href="../index.html" class="nav"><li>Home</li></a>
                 <a href="biografia.html" class="nav"><li>Biografia</li></a>
-                <a href="portfolio.html" class="nav"><li>Portfolio</li></a>
+                <a href="portfolio.html" class="nav" active><li class="active">Portfolio</li></a>
                 <a href="contacto.html" class="nav"><li>Contacto</li></a>
             </ul>
         </nav>
@@ -35,6 +42,7 @@
                 </div>
                 <div class="portfolio-item"><img src="../assets/images/Ejemplo-1_discord.png" alt="" class="portfolio-imagen">
                     <div class="texto">
+                        Prueba
                     </div>
                 </div>
                 <div class="portfolio-item"><img src="../assets/images/Ejemplo-1_discord.png" alt="" class="portfolio-imagen">
@@ -42,13 +50,15 @@
                         Prueba
                     </div>
                 </div>
-                <a href=#video-section><span id="arrow-down"><img src="../assets/icons/Arrow-down.svg.png" alt=""></span></a>
-            </div>
-            
+                
+                
         </section>
+        <div class="portfolio-arrow" id="video-section">
+            <a href=#video-section id="transition-portfolio"><span id="arrow-down"><img src="../assets/icons/Arrow-down.svg.png" alt=""></span></a>
+            </div>    
         <section class="video">
-            <h2  id="video-section">Ejemplo de mi forma de trabajar</h2>
-            <video src="../assets/videos/production ID_4629779.mp4" width="600px" height="auto" controls>Your navigation operator do not support this video</video>
+            <h2>Ejemplo de mi forma de trabajar</h2>
+            <video src="../assets/videos/production ID_4629779.mp4" width="800px" height="auto" controls>Your navigation operator do not support this video</video>
         </section>
     </main>
 </body>
