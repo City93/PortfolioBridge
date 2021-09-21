@@ -77,7 +77,120 @@ a.nav{
 
 
 /* Home */
+body.home{
+    background-image: url(/assets/images/shapelined-_JBKdviweXI-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+main.home{
+    display: flex;
+    margin-top: 100px;
+    height: 80vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+}
+li.item-home{
+    justify-self: left;
+    margin-top: 10px;
+    background-color: transparent;
+    color: black;
+    border-bottom: black 5px solid;
+    padding-bottom: 0;
+    font-size: 50px;
+    transition: 0.5s ease;
+}
+li.item-home:hover{
+    width: 400px;
+    font-size: 100px;    
+}
+li.item-home a{
+    text-decoration: none;
+    color: black;
+}
+div.img-home{
+    /* border: 1px solid blue; */
+    align-self: flex-end;
+    justify-self: flex-end;
+    height: 700px;
+    width: 500px;
+    margin-right: 25%;
+}
+div.img-home img{
+    position: absolute;
+    height: 700px;
+    width: auto;
+    margin:0;
+    padding: 0;
+}
+div.listado-home{
+    width: 100px;
+    height: 400px;
+    /* border: 1px solid green; */
+    height: auto;
+    display: flex;
+    align-content: center;
+    align-self: center;
+}
+/* Biografia */
+main.biografia{
+    display: flex;
+    height: 80vh;
+    width: auto;
+    /* border: 1px green solid; */
+    margin: 100px 10px 10px 10px;
+    flex-wrap: wrap;
+    background-image: url(/assets/images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg);
+    border-radius: 5px;
+}
+section.titulo{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 10%;
+    margin-left: 40px;
+    font-size: 50px;
+}
+section.info{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    columns: 2;
+    justify-content: center;
+    align-content: flex-start;
+}
+section.info div.biografia-img{
+    /* border: 1px dotted blue; */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+section.info div.biografia-txt{
+    /* border: 1px dotted red; */
+    height: 30%;
+    width: 50%;
+    text-align:left;
+    align-self: flex-start;
+    font-size: 22px;
+    font-weight: 300;   
+}
+div.biografia-img img{
+    width: auto;
+    height: 50%;
+    align-self: center;
+    border-radius: 40%;
+    border: 5px solid black;
+    padding: 5px;
+}
 
+   
 
 /* Portofolio */
 h1.titulo-proyectos{
@@ -185,9 +298,6 @@ section.video{
     text-align: center;
     
 }
-section.video h2{
-
-}
 section.video video{
     align-self: center;
     justify-self: center;
@@ -208,12 +318,12 @@ main.contacto{
 }
 
 form{
-    width: 50%;
+    width: 85%;
     position: relative;
     z-index: 999;
     padding-left: 50px;
     background-color: rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     font-weight: 600;
     letter-spacing: 1px;
@@ -244,7 +354,8 @@ div.form-img {
 }
 div.form-img img{
     height: 400px;
-    opacity: 50%;
+    width: auto;
+    opacity: 30%;
 }
 textarea{
     width: 250px;
@@ -280,6 +391,8 @@ input[type=submit]:hover{
     padding-left:5px;
     transition: 0.5s ease;
 }
+
+
 
 /* W3 schools degradado template
 .container {
